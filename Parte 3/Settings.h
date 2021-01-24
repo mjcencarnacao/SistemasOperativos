@@ -12,9 +12,9 @@
 #define exit_on_error(s,m)if( s < 0 ) { perror(m); exit(1); }
 #define exit_on_null(s,m) if (s==NULL) { perror(m); exit(1); }
 
-#define SRVKEY 0x0a92628
-#define MSGKEY 0x0a92628
-#define IPC_KEY 0x0a92628
+#define SRVKEY 0x0a99999
+#define MSGKEY 0x0a99999
+#define IPC_KEY 0x0a99999
 
 typedef struct {
     int tipo; // Tipo de Consulta: 1-Normal, 2-COVID19, 3-Urgente

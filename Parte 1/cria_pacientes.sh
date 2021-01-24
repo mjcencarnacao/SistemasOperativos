@@ -1,0 +1,2 @@
+#!/bin/bash
+grep '^a[0-9]' /etc/passwd | head -10 | sed 's/^a\(.*\)/\1/' | awk '{gsub(",",""); split($0,array,":"); print(array[1] ";" array[5] ";" ";" ";" "a" array[1] "@iscte-iul.pt;" 100)}' > pacientes.txt
